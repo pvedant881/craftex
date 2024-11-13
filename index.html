@@ -58,6 +58,11 @@
       .navbar-toggler {
         z-index: 1;
       }
+
+      /* Navbar menu items on mobile */
+      .navbar-collapse {
+        text-align: center;
+      }
     }
 
     /* Button hover effect */
@@ -90,7 +95,12 @@
 <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
   <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5 navbar-expand-lg" tabindex="0">
     <div class="container navbar-container">
-      
+
+      <!-- Hamburger icon for mobile view -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
       <!-- Brand name with logo -->
       <a class="navbar-brand fs-4 text-center" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
@@ -103,7 +113,7 @@
         <span class="ms-md-1 mt-1 fw-bolder">The CrafteX</span>
       </a>
 
-      <!-- Navbar menu items -->
+      <!-- Navbar menu items (centered on mobile, right-aligned on desktop) -->
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -139,7 +149,7 @@
             <p class="lead text-first custom-vibe">Whatever your vibe, we’ve got covers that speak your style, your way!</p>
           </div>
           <div class="col-12 text-center">
-            <a href="#" class="btn btn-xl btn-light btn-darken">Coming Soon</a>
+            <a href="#" class="btn btn-xl btn-light">Coming Soon</a> <!-- No changes made here -->
           </div>
         </div>
       </div>
