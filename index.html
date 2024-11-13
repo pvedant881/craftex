@@ -77,6 +77,14 @@
         text-align: center;
         flex-grow: 0;
       }
+
+      /* Ensure profile and cart icons stay in place */
+      .navbar-icons {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        z-index: 1;
+      }
     }
 
     /* Button hover effect */
@@ -86,11 +94,6 @@
     }
 
     /* Align profile and cart icons in the same row as the navbar */
-    .navbar-icons {
-      display: flex;
-      align-items: center;
-    }
-
     .navbar-icons a {
       margin-left: 15px;
       display: inline-block;
@@ -134,7 +137,7 @@
         </ul>
       </div>
 
-      <!-- Profile and Cart icons (aligned to the right) -->
+      <!-- Profile and Cart icons (aligned to the right and fixed) -->
       <div class="navbar-icons">
         <a href="#"><img src="images/user.svg" alt="User Icon"></a>
         <a href="#"><img src="images/cart.svg" alt="Cart Icon"></a>
