@@ -19,7 +19,7 @@
   <link href="css/tiny-slider.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <style>
-    /* Add custom responsive styles here */
+    /* Custom responsive styles */
     @media (max-width: 768px) {
       .navbar-toggler {
         position: absolute;
@@ -28,8 +28,14 @@
       }
 
       .navbar-brand {
-        text-align: center;
         margin: 0 auto;
+        text-align: center;
+      }
+
+      .navbar-icons {
+        position: absolute;
+        top: 10px;
+        right: 10px;
       }
 
       .custom-mission,
@@ -55,7 +61,11 @@
 
 <body class="bg-black text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
   <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5 navbar-expand-lg" tabindex="0">
-    <div class="container">
+    <div class="container position-relative">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
       <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
           viewBox="0 0 16 16">
@@ -66,9 +76,12 @@
         </svg>
         <span class="ms-md-1 mt-1 fw-bolder me-md-5">The CrafteX</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+
+      <div class="navbar-icons d-flex">
+        <a class="nav-link" href="#"><img src="images/user.svg" alt="User Icon" class="me-3"></a>
+        <a class="nav-link" href="#"><img src="images/cart.svg" alt="Cart Icon"></a>
+      </div>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
@@ -79,12 +92,6 @@
           </li>
           <li class="nav-item">
             <a class="nav-link fs-5" href="#">About us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img src="images/user.svg"></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><img src="images/cart.svg"></a>
           </li>
         </ul>
       </div>
