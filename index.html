@@ -34,8 +34,15 @@
 
       .navbar-icons {
         position: absolute;
-        top: 10px;
+        top: 50%;
         right: 10px;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+      }
+
+      .navbar-icons a {
+        margin-left: 10px;
       }
 
       .custom-mission,
@@ -77,9 +84,11 @@
         <span class="ms-md-1 mt-1 fw-bolder me-md-5">The CrafteX</span>
       </a>
 
-      <div class="navbar-icons d-flex">
-        <a class="nav-link" href="#"><img src="images/user.svg" alt="User Icon" class="me-3"></a>
-        <a class="nav-link" href="#"><img src="images/cart.svg" alt="Cart Icon"></a>
+      <div class="navbar-icons">
+        <!-- Profile Icon -->
+        <a href="#"><img src="images/user.svg" alt="User Icon"></a>
+        <!-- Cart Icon -->
+        <a href="#"><img src="images/cart.svg" alt="Cart Icon"></a>
       </div>
 
       <div class="collapse navbar-collapse" id="navbarNav">
