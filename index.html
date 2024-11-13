@@ -30,6 +30,7 @@
       .navbar-brand {
         flex-grow: 1;
         text-align: center;
+        margin-left: 0 !important; /* Centering the brand */
       }
 
       .navbar-nav {
@@ -63,6 +64,19 @@
       .navbar-collapse {
         text-align: center;
       }
+
+      .navbar-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      /* Center navbar-brand in mobile view */
+      .navbar-brand {
+        text-align: center;
+        flex-grow: 0;
+      }
     }
 
     /* Button hover effect */
@@ -81,14 +95,6 @@
       margin-left: 15px;
       display: inline-block;
     }
-
-    /* Navbar container adjustment */
-    .navbar-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
   </style>
 </head>
 
@@ -101,7 +107,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <!-- Brand name with logo -->
+      <!-- Brand name with logo, centered on mobile view -->
       <a class="navbar-brand fs-4 text-center" href="#">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
           viewBox="0 0 16 16">
