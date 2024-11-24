@@ -73,13 +73,40 @@
       margin-left: 15px;
       display: inline-block;
     }
+
+    /* Mission Section */
+    @media (min-width: 992px) {
+      .display-huge {
+        font-size: 4rem;
+      }
+
+      .custom-vibe {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .display-huge {
+        font-size: 2rem;
+      }
+
+      .custom-mission,
+      .custom-vibe {
+        font-size: 1rem !important;
+      }
+
+      .btn-xl {
+        padding: 10px 20px;
+        font-size: 1rem;
+      }
+    }
   </style>
 </head>
 
 <body class="bg-black text-white h-100" data-bs-spy="scroll" data-bs-target="#navScroll">
+  <!-- Navbar -->
   <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top navbar-expand-lg">
     <div class="container">
-
       <!-- Navbar Toggler -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -137,35 +164,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Responsive Styling -->
-      <style>
-        @media (min-width: 992px) {
-          .display-huge {
-            font-size: 4rem;
-          }
-
-          .custom-vibe {
-            font-size: 1.5rem;
-          }
-        }
-
-        @media (max-width: 768px) {
-          .display-huge {
-            font-size: 2rem;
-          }
-
-          .custom-mission,
-          .custom-vibe {
-            font-size: 1rem !important;
-          }
-
-          .btn-xl {
-            padding: 10px 20px;
-            font-size: 1rem;
-          }
-        }
-      </style>
     </section>
   </main>
 
