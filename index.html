@@ -1,140 +1,167 @@
-<!DOCTYPE html>
-<html lang="en" class="h-100">
+<!doctype html>
+<html class="h-100" lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <meta name="description" content="Design Your Vibe with The CrafteX">
-  <meta name="author" content="The CrafteX">
-  <meta name="HandheldFriendly" content="true">
-  <title>The CrafteX</title>
-
-  <!-- Favicons -->
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
   <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="96x96" href="img/favicon.png">
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <meta name="author" content="Holger Koenemann">
+  <meta name="generator" content="Eleventy v2.0.0">
+  <meta name="HandheldFriendly" content="true">
+  <title>The CrafteX HTML Template - Frontpage one</title>
   <link rel="stylesheet" href="css/theme.min.css">
-  <link rel="stylesheet" href="css/tiny-slider.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <title>The CrafteX Free Bootstrap 5 Template for The CrafteXture and Interior Design Websites by Untree.co</title>
 
   <style>
-    /* Custom Responsive Styles */
-    @media (max-width: 768px) {
-      .navbar-toggler {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-      }
-
-      .navbar-brand {
-        position: absolute;
-        top: 15px;
-        left: 50%;
-        transform: translateX(-50%);
-        text-align: center;
-        flex-grow: 1;
-        margin-left: 0 !important;
-      }
-
-      .navbar-nav {
-        text-align: center;
-        margin-top: 60px;
-      }
-
-      .navbar-icons {
-        position: absolute;
-        right: 10px;
-        top: 10px;
-      }
+    /* inter-300 - latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-300.woff2') format('woff2'),
+        url('fonts/inter-v12-latin-300.woff') format('woff');
     }
 
-    /* Button hover effect */
-    .btn-darken:hover {
-      background-color: #444 !important;
-      color: #fff !important;
+    /* inter-400 - latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 400;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-regular.woff2') format('woff2'),
+        url('fonts/inter-v12-latin-regular.woff') format('woff');
     }
 
-    /* Navbar icons alignment */
-    .navbar-icons a {
-      margin-left: 15px;
-      display: inline-block;
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-500.woff2') format('woff2'),
+        url('fonts/inter-v12-latin-500.woff') format('woff');
+    }
+
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local(''),
+        url('fonts/inter-v12-latin-700.woff2') format('woff2'),
+        url('fonts/inter-v12-latin-700.woff') format('woff');
+    }
+
+    body {
+      background-color: #d3d3d3; /* Changed background to a light gray */
+      color: #000;
     }
   </style>
+
 </head>
 
-<body class="bg-black text-white h-100" data-bs-spy="scroll" data-bs-target="#navScroll">
-  <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top navbar-expand-lg">
+<body class="text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+
+  <nav id="navScroll" class="navbar navbar-dark bg-black fixed-top px-vw-5" tabindex="0">
     <div class="container">
-
-      <!-- Navbar Toggler -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Brand -->
-      <a class="navbar-brand d-flex align-items-center" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack" viewBox="0 0 16 16">
-          <path d="M14.12 10.163l1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
-          <path d="M14.12 6.576l1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
+      <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="The Craftex - Launching Page(Coming Soon).html">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-stack"
+          viewBox="0 0 16 16">
+          <path
+            d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z" />
+          <path
+            d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z" />
         </svg>
-        <span class="ms-2 fw-bolder">The CrafteX</span>
+        <span class="ms-md-1 mt-1 fw-bolder me-md-5">The CrafteX</span>
       </a>
+      <div class="navbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-group list-group-horizontal">
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="The Craftex - Launching Page(Coming Soon).html" aria-label="Homepage">
+              Shop with us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="The Craftex - Launching Page(Coming Soon).html" aria-label="A sample content page">
+              Contact us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-5" href="The Craftex - Launching Page(Coming Soon).html" aria-label="A system message page">
+              About us
 
-      <!-- Navbar Links -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link btn-darken" href="#">Shop with us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn-darken" href="#">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link btn-darken" href="#">About us</a>
+              <li><a class="nav-link" href="The Craftex - Launching Page(Coming Soon).html"><img src="images/user.svg"></a></li>
+              <li><a class="nav-link" href="The Craftex - Launching Page(Coming Soon).html"><img src="images/cart.svg"></a></li>
+            </a>
           </li>
         </ul>
-      </div>
-
-      <!-- Icons -->
-      <div class="navbar-icons">
-        <a href="#"><img src="images/user.svg" alt="User Icon"></a>
-        <a href="#"><img src="images/cart.svg" alt="Cart Icon"></a>
-      </div>
+      </div>      
     </div>
   </nav>
 
-  <!-- Main Section -->
   <main>
-    <section class="position-relative bg-black text-white py-5 d-flex align-items-center justify-content-center" style="min-height: 100vh;" data-aos="fade">
-      <div class="position-absolute w-100 h-100 bg-black opacity-75"></div>
-      <div class="container position-relative text-center">
-        <div class="row align-items-center justify-content-center">
-          <div class="col-12 col-xl-10">
-            <span class="h5 text-muted fw-lighter custom-mission d-block mb-3">Our Mission</span>
-            <h1 class="display-huge mt-3 mb-3 lh-1">We craft crazy stuff for cool people like you</h1>
-          </div>
-          <div class="col-12 col-xl-8">
-            <p class="lead custom-vibe mb-4">Whatever your vibe, we’ve got covers that speak your style, your way!</p>
-          </div>
-          <div class="col-12">
-            <a href="#" class="btn btn-xl btn-light">Coming Soon</a>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
-  <!-- Scripts -->
+    <div class="w-100 overflow-hidden position-relative" data-aos="fade">
+        <div class="position-absolute w-100 h-90 opacity-75 top-0 start-0"></div>
+        <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
+            <div class="row d-flex align-items-center justify-content-center py-vh-5">
+                <div class="col-12 col-xl-10">
+                    <span class="h5 text-first fw-lighter custom-mission">Our Mission</span>
+                    <h1 class="display-huge mt-3 mb-3 lh-1">We craft crazy stuff for cool people like you</h1>
+                </div>
+                <div class="col-12 col-xl-8">
+                    <p class="lead text-first custom-vibe">Whatever your vibe, we’ve got covers that speak your style, your way!</p>
+                </div>
+                <div class="col-12 text-center">
+                    <a href="#" class="btn btn-xl btn-light">Coming Soon
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/aos.js"></script>
   <script>
-    AOS.init({ duration: 800 });
+    AOS.init({
+      duration: 800,
+    });
   </script>
+  <script>
+    let scrollpos = window.scrollY;
+    const header = document.querySelector(".navbar");
+    const header_height = header.offsetHeight;
+
+    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= header_height) { add_class_on_scroll(); }
+      else { remove_class_on_scroll(); }
+    });
+  </script>
+
 </body>
 
 </html>
