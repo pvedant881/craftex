@@ -293,3 +293,13 @@ Got it! Here's the updated HTML with your full CSS code integrated and adjusted 
             left: 0;
             right: 0;
             position: absolute;
+
+
+.logo-text {
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font is included */
+    font-style: italic;
+    font-weight: 400;
+    font-size: 32px; /* Adjust size as needed */
+    color: white; /* Match your design */
+    text-transform: none; /* Prevents unintended capitalization */
+}
