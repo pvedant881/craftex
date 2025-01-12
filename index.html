@@ -142,18 +142,59 @@
       line-height: 1.2;
     }
 
+    .mobile-nav {
+      display: none;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 250px;
+      height: 100%;
+      background: #4a4a4a;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 1000;
+      padding: 20px;
+    }
+
+    .mobile-nav.open {
+      transform: translateX(0);
+    }
+
+    .mobile-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .mobile-nav ul li {
+      margin: 15px 0;
+    }
+
+    .mobile-nav ul li a {
+      color: #d3d3d3;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    .mobile-nav ul li a:hover {
+      color: #ffffff;
+    }
+
+    .hamburger {
+      display: none;
+      font-size: 1.5rem;
+      color: #ffffff;
+      cursor: pointer;
+    }
+
     @media (max-width: 768px) {
-      .display-huge {
-        font-size: 2rem;
+      .hamburger {
+        display: block;
       }
 
-      .custom-mission {
-        font-size: 1rem;
-      }
-
-      .nav-link {
-        font-size: 0.9rem;
-        margin-right: 10px;
+      .navbar-nav {
+        display: none;
       }
 
       .btn-light {
@@ -162,7 +203,6 @@
       }
     }
   </style>
-
 </head>
 
 <body class="text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
@@ -172,22 +212,15 @@
       <a class="navbar-brand pe-md-4 fs-4" href="#">
         <span class="ms-md-1 mt-1 fw-bolder">The CrafteX</span>
       </a>
-      <div class="d-flex align-items-center">
-        <ul class="navbar-nav list-group list-group-horizontal">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Shop with us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About us</a>
-          </li>
+      <span class="hamburger" id="hamburger">☰</span>
+      <div class="mobile-nav" id="mobileNav">
+        <ul>
+          <li><a href="#">Shop with us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#"><img src="images/user.svg" alt="User"> Profile</a></li>
+          <li><a href="#"><img src="images/cart.svg" alt="Cart"> Cart</a></li>
         </ul>
-        <div class="d-flex ms-3">
-          <a class="nav-link" href="#"><img src="images/user.svg" alt="User"></a>
-          <a class="nav-link" href="#"><img src="images/cart.svg" alt="Cart"></a>
-        </div>
       </div>
     </div>
   </nav>
@@ -220,6 +253,13 @@
   <script>
     AOS.init({
       duration: 800,
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      mobileNav.classList.toggle('open');
     });
   </script>
   <script>
