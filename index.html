@@ -87,12 +87,13 @@
       color: #d3d3d3;
       font-size: 1rem;
       margin-right: 15px;
-      transition: color 0.3s ease;
+      transition: color 0.3s ease, transform 0.3s ease;
     }
 
     .nav-link:hover {
       color: #ffffff;
       text-decoration: none;
+      transform: translateY(-3px);
     }
 
     .nav-item {
@@ -113,7 +114,7 @@
     }
 
     .nav-item:hover::after {
-      width: 50%;
+      width: 80%;
     }
 
     .btn-light {
