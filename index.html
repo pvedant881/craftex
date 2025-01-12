@@ -24,7 +24,6 @@
   <title>The CrafteX Free Bootstrap 5 Template for The CrafteXture and Interior Design Websites by Untree.co</title>
 
   <style>
-    /* inter-300 - latin */
     @font-face {
       font-family: 'Inter';
       font-style: normal;
@@ -35,7 +34,6 @@
         url('fonts/inter-v12-latin-300.woff') format('woff');
     }
 
-    /* inter-400 - latin */
     @font-face {
       font-family: 'Inter';
       font-style: normal;
@@ -71,6 +69,10 @@
       color: #fff;
     }
 
+    .navbar {
+      background-color: #5a5a5a; /* Match middle gray */
+    }
+
     .navbar-brand span {
       font-family: 'Poppins', sans-serif; /* Updated font to Poppins for The CrafteX logo */
       font-style: italic;
@@ -78,16 +80,47 @@
       font-size: 1.5rem;
       color: #f8f9fa;
     }
+
+    .nav-link {
+      color: #f8f9fa;
+    }
+
+    .nav-link:hover {
+      color: #f1c40f; /* Subtle highlight for links */
+      text-decoration: underline;
+    }
+
+    .btn-light {
+      background-color: #f1c40f;
+      color: #000;
+    }
+
+    .btn-light:hover {
+      background-color: #d4ac0d;
+      color: #000;
+    }
+
+    .custom-mission {
+      font-size: 1.25rem; /* Larger for better readability */
+    }
+
+    @media (max-width: 768px) {
+      .display-huge {
+        font-size: 2rem; /* Responsive font for mobile */
+      }
+      .custom-mission {
+        font-size: 1rem; /* Adjust for smaller screens */
+      }
+    }
   </style>
 
 </head>
 
 <body class="text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
 
-  <nav id="navScroll" class="navbar navbar-dark bg-gray fixed-top px-vw-5" tabindex="0">
+  <nav id="navScroll" class="navbar navbar-dark fixed-top px-vw-5" tabindex="0">
     <div class="container">
       <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="The Craftex - Launching Page(Coming Soon).html">
-        
         <span class="ms-md-1 mt-1 fw-bolder me-md-5">The CrafteX</span>
       </a>
       <div class="navbar">
@@ -105,11 +138,10 @@
           <li class="nav-item">
             <a class="nav-link fs-5" href="The Craftex - Launching Page(Coming Soon).html" aria-label="A system message page">
               About us
-
-              <li><a class="nav-link" href="The Craftex - Launching Page(Coming Soon).html"><img src="images/user.svg"></a></li>
-              <li><a class="nav-link" href="The Craftex - Launching Page(Coming Soon).html"><img src="images/cart.svg"></a></li>
             </a>
           </li>
+          <li><a class="nav-link" href="The Craftex - Launching Page(Coming Soon).html"><img src="images/user.svg"></a></li>
+          <li><a class="nav-link" href="The Craftex - Launching Page(Coming Soon).html"><img src="images/cart.svg"></a></li>
         </ul>
       </div>      
     </div>
