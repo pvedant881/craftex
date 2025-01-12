@@ -65,51 +65,75 @@
     }
 
     body {
-      background-color: #3a3a3a; /* Changed background to dark gray */
+      background-color: #4a4a4a;
       color: #fff;
     }
 
     .navbar {
-      background-color: #5a5a5a; /* Match middle gray */
+      background-color: #4a4a4a;
+      border-bottom: 1px solid #6a6a6a;
     }
 
     .navbar-brand span {
-      font-family: 'Poppins', sans-serif; /* Updated font to Poppins for The CrafteX logo */
+      font-family: 'Poppins', sans-serif;
       font-style: italic;
       font-weight: 400;
       font-size: 1.5rem;
-      color: #f8f9fa;
+      color: #ffffff;
     }
 
     .nav-link {
-      color: #f8f9fa;
+      color: #d3d3d3;
+      font-size: 1rem;
+      margin-right: 15px;
     }
 
     .nav-link:hover {
-      color: #f1c40f; /* Subtle highlight for links */
+      color: #ffffff;
       text-decoration: underline;
     }
 
     .btn-light {
-      background-color: #f1c40f;
+      background-color: #ffc107;
       color: #000;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 1rem;
     }
 
     .btn-light:hover {
-      background-color: #d4ac0d;
+      background-color: #ffca2c;
       color: #000;
     }
 
     .custom-mission {
-      font-size: 1.25rem; /* Larger for better readability */
+      font-size: 1.25rem;
+      color: #bcbcbc;
+    }
+
+    .display-huge {
+      font-size: 3rem;
+      color: #ffffff;
+      line-height: 1.2;
     }
 
     @media (max-width: 768px) {
       .display-huge {
-        font-size: 2rem; /* Responsive font for mobile */
+        font-size: 2rem;
       }
+
       .custom-mission {
-        font-size: 1rem; /* Adjust for smaller screens */
+        font-size: 1rem;
+      }
+
+      .nav-link {
+        font-size: 0.9rem;
+        margin-right: 10px;
+      }
+
+      .btn-light {
+        font-size: 0.9rem;
+        padding: 8px 16px;
       }
     }
   </style>
@@ -118,7 +142,7 @@
 
 <body class="text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
 
-  <nav id="navScroll" class="navbar navbar-dark fixed-top px-vw-5" tabindex="0">
+  <nav id="navScroll" class="navbar fixed-top px-vw-5" tabindex="0">
     <div class="container">
       <a class="navbar-brand pe-md-4 fs-4 col-12 col-md-auto text-center" href="The Craftex - Launching Page(Coming Soon).html">
         <span class="ms-md-1 mt-1 fw-bolder me-md-5">The CrafteX</span>
@@ -126,53 +150,43 @@
       <div class="navbar">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 list-group list-group-horizontal">
           <li class="nav-item">
-            <a class="nav-link fs-5" href="The Craftex - Launching Page(Coming Soon).html" aria-label="Homepage">
-              Shop with us
-            </a>
+            <a class="nav-link" href="#">Shop with us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5" href="The Craftex - Launching Page(Coming Soon).html" aria-label="A sample content page">
-              Contact us
-            </a>
+            <a class="nav-link" href="#">Contact us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link fs-5" href="The Craftex - Launching Page(Coming Soon).html" aria-label="A system message page">
-              About us
-            </a>
+            <a class="nav-link" href="#">About us</a>
           </li>
-          <li><a class="nav-link" href="The Craftex - Launching Page(Coming Soon).html"><img src="images/user.svg"></a></li>
-          <li><a class="nav-link" href="The Craftex - Launching Page(Coming Soon).html"><img src="images/cart.svg"></a></li>
+          <li><a class="nav-link" href="#"><img src="images/user.svg"></a></li>
+          <li><a class="nav-link" href="#"><img src="images/cart.svg"></a></li>
         </ul>
-      </div>      
+      </div>
     </div>
   </nav>
 
   <main>
-
     <div class="w-100 overflow-hidden position-relative" data-aos="fade">
-        <div class="position-absolute w-100 h-90 opacity-75 top-0 start-0"></div>
-        <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
-            <div class="row d-flex align-items-center justify-content-center py-vh-5">
-                <div class="col-12 col-xl-10">
-                    <span class="h5 text-first fw-lighter custom-mission">Our Mission</span>
-                    <h1 class="display-huge mt-3 mb-3 lh-1">We craft crazy stuff for cool people like you</h1>
-                </div>
-                <div class="col-12 col-xl-8">
-                    <p class="lead text-first custom-vibe">Whatever your vibe, we’ve got covers that speak your style, your way!</p>
-                </div>
-                <div class="col-12 text-center">
-                    <a href="#" class="btn btn-xl btn-light">Coming Soon
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                            class="bi bi-arrow-right" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd"
-                                d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
+      <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
+        <div class="row d-flex align-items-center justify-content-center py-vh-5">
+          <div class="col-12 col-xl-10">
+            <span class="h5 text-first fw-lighter custom-mission">Our Mission</span>
+            <h1 class="display-huge mt-3 mb-3 lh-1">We craft crazy stuff for cool people like you</h1>
+          </div>
+          <div class="col-12 col-xl-8">
+            <p class="lead text-first custom-vibe">Whatever your vibe, we’ve got covers that speak your style, your way!</p>
+          </div>
+          <div class="col-12 text-center">
+            <a href="#" class="btn btn-xl btn-light">Coming Soon
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
     </div>
-</main>
+  </main>
 
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/aos.js"></script>
@@ -192,8 +206,11 @@
     window.addEventListener('scroll', function () {
       scrollpos = window.scrollY;
 
-      if (scrollpos >= header_height) { add_class_on_scroll(); }
-      else { remove_class_on_scroll(); }
+      if (scrollpos >= header_height) {
+        add_class_on_scroll();
+      } else {
+        remove_class_on_scroll();
+      }
     });
   </script>
 
