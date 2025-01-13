@@ -1,6 +1,6 @@
-
 <!doctype html>
 <html class="h-100" lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -10,11 +10,79 @@
   <link rel="icon" type="image/png" sizes="16x16" href="images/The Craftex logo.png">
   <link rel="icon" href="images/The Craftex logo.png" type="image/png">
   <title>About Us | The CrafteX</title>
+
+  <!-- CSS -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="css/theme.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #1E272C;
+      color: #fff;
+    }
+
+    .navbar {
+      background-color: #1E272C;
+      border-bottom: 1px solid #6a6a6a;
+      padding: 0.5rem 1rem;
+    }
+
+    .navbar-brand span {
+      font-family: 'Proxima Nova', sans-serif;
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #ffffff;
+    }
+
+    .nav-link {
+      color: #d3d3d3;
+      font-size: 1rem;
+      margin-right: 25px;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #ffffff;
+      text-decoration: none;
+      transform: translateY(-3px);
+    }
+
+    .display-huge {
+      font-size: 3rem;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .custom-mission {
+      font-size: 1.25rem;
+      color: #bcbcbc;
+    }
+
+    .lead {
+      color: #d3d3d3;
+    }
+
+    .btn-light {
+      background-color: #ffc107;
+      color: #000;
+      border-radius: 25px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-light:hover {
+      background-color: #ffca2c;
+      color: #000;
+    }
+  </style>
 </head>
+
 <body class="text-white">
+  <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
       <a class="navbar-brand" href="index.html">The CrafteX</a>
@@ -31,10 +99,12 @@
       </div>
     </div>
   </nav>
+
+  <!-- About Us Section -->
   <main class="container py-5">
     <div class="row text-center mb-4">
-      <h1 class="display-4">About Us</h1>
-      <p class="lead">Discover the story behind The CrafteX and our commitment to quality.</p>
+      <h1 class="display-huge">About Us</h1>
+      <p class="custom-mission">Discover the story behind The CrafteX and our commitment to quality.</p>
     </div>
     <div class="row">
       <div class="col-md-6">
@@ -42,17 +112,22 @@
       </div>
       <div class="col-md-6">
         <h2>Our Journey</h2>
-        <p>The CrafteX began with a simple mission: to bring quality and creativity into every product we craft.</p>
+        <p class="lead">The CrafteX began with a simple mission: to bring quality and creativity into every product we craft. Over the years, we've evolved into a trusted name, known for our attention to detail and passion for excellence.</p>
         <h2>Our Vision</h2>
-        <p>We aim to inspire creativity and innovation by delivering products that resonate with individuality and quality craftsmanship.</p>
+        <p class="lead">We aim to inspire creativity and innovation by delivering products that resonate with individuality and quality craftsmanship. At The CrafteX, we believe every piece tells a story—yours.</p>
       </div>
     </div>
   </main>
+
+  <!-- Footer -->
   <footer class="bg-dark text-white py-3">
     <div class="container text-center">
       <p>&copy; 2025 The CrafteX. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JS Scripts -->
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
