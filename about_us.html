@@ -82,63 +82,60 @@
     .footer {
       background-color: #1E272C;
       border-top: 1px solid #6a6a6a;
-      padding-top: 40px;
-      padding-bottom: 40px;
-    }
-
-    .footer-section {
-      text-align: left;
+      padding: 60px 0;
       color: #d3d3d3;
     }
 
-    .footer-section h5 {
+    .footer h5 {
       color: #ffffff;
       font-weight: 700;
-      margin-bottom: 15px;
+      margin-bottom: 20px;
     }
 
-    .footer-section ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    .footer-section ul li {
-      margin-bottom: 10px;
-    }
-
-    .footer-section ul li a {
+    .footer a {
       color: #d3d3d3;
       text-decoration: none;
       transition: color 0.3s ease;
     }
 
-    .footer-section ul li a:hover {
+    .footer a:hover {
       color: #ffffff;
     }
 
-    .subscribe-section {
-      text-align: center;
+    .subscribe-input {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
     }
 
-    .subscribe-section input[type="email"] {
+    .subscribe-input input {
       padding: 10px;
       border: none;
       border-radius: 5px;
-      width: 300px;
+      flex: 1;
+      max-width: 400px;
     }
 
-    .subscribe-section button {
-      background-color: #ffc107;
-      color: #000;
+    .subscribe-input button {
       padding: 10px 20px;
+      background-color: #ffc107;
       border: none;
       border-radius: 5px;
-      cursor: pointer;
+      color: #000;
+      font-weight: bold;
       transition: background-color 0.3s ease;
     }
 
-    .subscribe-section button:hover {
+    .subscribe-input button:hover {
       background-color: #ffca2c;
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #888;
     }
   </style>
 </head>
@@ -185,17 +182,17 @@
   <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 footer-section">
+        <div class="col-lg-4 col-md-6 mb-4">
           <h5>Know Us</h5>
-          <ul>
+          <ul class="list-unstyled">
             <li><a href="about_us.html">About The CrafteX</a></li>
             <li><a href="#">Corporate Gifting</a></li>
             <li><a href="#">Blog</a></li>
           </ul>
         </div>
-        <div class="col-md-4 footer-section">
+        <div class="col-lg-4 col-md-6 mb-4">
           <h5>Helpdesk</h5>
-          <ul>
+          <ul class="list-unstyled">
             <li><a href="#">Contact Us</a></li>
             <li><a href="#">Terms Of Use</a></li>
             <li><a href="#">Warranty Policy</a></li>
@@ -205,18 +202,18 @@
             <li><a href="#">Privacy & Security Policy</a></li>
           </ul>
         </div>
-        <div class="col-md-4 subscribe-section">
+        <div class="col-lg-4 col-md-12">
           <h5>Get Exclusive Access</h5>
           <p>Subscribe to receive updates on new products, deals, and surprise treats!</p>
-          <form>
+          <div class="subscribe-input">
             <input type="email" placeholder="Enter your email">
             <button type="submit">Subscribe</button>
-          </form>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container text-center mt-4">
-      <p>&copy; 2025 The CrafteX. All rights reserved.</p>
+      <div class="footer-bottom">
+        &copy; 2025 The CrafteX. All rights reserved.
+      </div>
     </div>
   </footer>
 
