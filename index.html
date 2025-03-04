@@ -1,7 +1,7 @@
 <!doctype html>
 <html class="h-100" lang="en">
 
-<head>
+  <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
   <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
@@ -22,7 +22,6 @@
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap" rel="stylesheet">
   <title>The CrafteX</title>
-
 
   <style>
     @font-face {
@@ -66,12 +65,12 @@
     }
 
     body {
-      background-color: #3b5d50;
+      background-color: #1E272C;
       color: #fff;
     }
 
     .navbar {
-      background-color: #3b5d50;
+      background-color: #1E272C;
       /* Removed the border-bottom line */
       padding: 0.5rem 1rem;
     }
@@ -247,6 +246,7 @@
 </head>
 
 <body class="text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+
   <nav id="navScroll" class="navbar fixed-top px-vw-5" tabindex="0">
     <div class="container d-flex justify-content-between align-items-center">
       <a class="navbar-brand pe-md-4 fs-4" href="#">
@@ -288,58 +288,27 @@
             <p class="lead text-first custom-vibe">We pour passion into every cover, making sure your style dazzles and delights. Dare to be you!</p>
           </div>
           <div class="col-12 text-center">
-            <a href="#" class="btn btn-xl btn-light">Coming Soon</a>
+            <a href="#" class="btn btn-xl btn-light">Coming Soon
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </main>
- 
-
-<footer class="custom-footer" style="background-color: #ffffff; color: #3b5d50; padding: 40px 0;">
-    <div class="container" style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; flex-wrap: wrap; align-items: top;">
-        <div class="footer-column" style="flex: 3; min-width: 260px; padding-right: 20px;">
-            <h3>The CrafteX</h3>
-            <p>We specialize in high-quality, customizable design pieces to fit every aesthetic. Explore our range to make your spaces truly yours.</p>
-        </div>
-        <div class="footer-column" style="flex: 1; min-width: 160px;">
-            <h4>Links</h4>
-            <ul style="list-style: none; padding: 0;">
-                <li><a href="#" style="color: #3b5d50; text-decoration: none;">About Us</a></li>
-                <li><a href="#" style="color: #3b5d50; text-decoration: none;">Services</a></li>
-                <li><a href="#" style="color: #3b5d50; text-decoration: none;">Contact Us</a></li>
-                <li><a href="#" style="color: #3b5d50; text-decoration: none;">Jobs</a></li>
-                <li><a href="#" style="color: #3b5d50; text-decoration: none;">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="footer-column" style="flex: 1; min-width: 160px;">
-            <h4>Products</h4>
-            <ul style="list-style: none; padding: 0;">
-                <li><a href="#" style="color: #3b5d50; text-decoration: none;">Phone Models</a></li>
-                <li><a href="#" style="color: #3b5d50; text-decoration: none;">Cover Materials</a></li>
-                <li><a href="#" style="color: #3b5d50; text-decoration: none;">Accessories</a></li>
-            </ul>
-        </div>
-        <div class="footer-column" style="flex: 2; min-width: 220px;">
-            <h4>Follow Us</h4>
-            <div class="footer-social-links" style="margin-bottom: 10px;">
-                <a href="#" style="color: #3b5d50; text-decoration: none; margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" style="color: #3b5d50; text-decoration: none; margin-right: 10px;"><i class="fab fa-twitter"></i></a>
-                <a href="#" style="color: #3b5d50; text-decoration: none; margin-right: 10px;"><i class="fab fa-instagram"></i></a>
-                <a href="#" style="color: #3b5d50; text-decoration: none; margin-right: 10px;"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <form action="/subscribe" method="POST" id="subscribe-form">
-              <label for="emailInput" style="display: block; margin-bottom: 8px;"></label>
-              <input type="email" id="emailInput" name="email" placeholder="Enter your email" required 
-                     style="padding: 8px; width: 100%; margin-bottom: 10px; border: 1px solid #ccc;">
-              <button type="submit" class="subscribe-btn" 
-                      style="padding: 8px 16px; background-color: #f8a400; color: white; border: none; cursor: pointer;">
-                  Subscribe
-              </button>
-          </form>
-          
-        </div>
-    </div>
+  
+<!-- Subscriber's section -->
+<footer class="footer-subscribe" style="background-color: #1E272C; padding: 40px 0;">
+  <div class="container text-center">
+    <h3 style="color: #FFF; font-size: 24px; font-weight: 700;">Stay Updated!</h3>
+    <p style="color: #bcbcbc; font-size: 16px; margin: 20px 0;">Subscribe to our newsletter to receive the latest news and exclusive offers every week.</p>
+    <form action="YOUR_SUBSCRIPTION_SERVICE_URL" method="post" style="max-width: 500px; margin: auto; display: flex; justify-content: center;">
+      <input type="email" name="email" placeholder="Enter your email" required style="flex-grow: 1; padding: 10px; border: none; border-radius: 30px 0 0 30px; font-size: 16px;">
+      <button type="submit" style="background-color: #ffc107; border: none; padding: 10px 20px; color: #000; border-radius: 0 30px 30px 0; font-size: 16px; cursor: pointer;">Subscribe</button>
+    </form>
+  </div>
 </footer>
 
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -369,21 +338,24 @@
       overlay.classList.remove('show');
     });
   </script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-      const header = document.querySelector(".custom-navbar"); // Ensure this selector matches your HTML
-      const header_height = header.offsetHeight;
-  
-      window.addEventListener('scroll', function () {
-          if (window.scrollY >= header_height) {
-              header.classList.add("scrolled", "shadow-sm");
-          } else {
-              header.classList.remove("scrolled", "shadow-sm");
-          }
-      });
-  });
+  <script>
+    let scrollpos = window.scrollY;
+    const header = document.querySelector(".navbar");
+    const header_height = header.offsetHeight;
+
+    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
+    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
+
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
+
+      if (scrollpos >= header_height) {
+        add_class_on_scroll();
+      } else {
+        remove_class_on_scroll();
+      }
+    });
   </script>
-  
 
 </body>
 
