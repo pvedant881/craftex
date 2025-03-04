@@ -7,69 +7,77 @@
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
         @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap");
-        
+
         body {
-            overflow-x: hidden;
-            position: relative;
+            margin: 0; /* Remove default margin */
+            overflow-x: hidden; /* Prevent horizontal scrolling */
             font-family: "Inter", sans-serif;
             font-weight: 400;
-            line-height: 28px;
+            line-height: 1.6; /* More readable line height */
             color: #6a6a6a;
-            font-size: 14px;
+            font-size: 16px; /* Slightly larger base font size for better readability */
             background-color: #eff2f1;
         }
 
         a {
             text-decoration: none;
-            transition: .3s all ease;
-            color: #2f2f2f;
-            text-decoration: underline;
+            color: #2f2f2f; /* Simplified the color transition for better consistency */
+            transition: color 0.3s ease;
         }
 
         a:hover {
-            color: #2f2f2f;
-            text-decoration: none;
+            text-decoration: underline; /* Underline on hover for better UX */
+            color: #000; /* Change color on hover for better visibility */
         }
 
         .custom-navbar {
-            background: #3b5d50 !important;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            background-color: #3b5d50; /* Use background-color for better CSS specificity */
+            padding: 20px 0; /* Unified padding for simplicity */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
         }
 
         .custom-navbar .navbar-brand {
             font-size: 32px;
             font-weight: 600;
+            color: white; /* Ensuring text is easily readable on the dark background */
         }
 
         .custom-navbar .navbar-brand > span {
-            opacity: .4;
+            opacity: 0.4; /* Stylistic choice for design flair */
         }
 
         .hero {
-            background: #3b5d50;
-            padding: calc(4rem - 30px) 0 0rem 0;
-        }
-
-        @media (min-width: 768px) {
-            .hero {
-                padding: calc(4rem - 30px) 0 4rem 0;
-            }
+            background-color: #3b5d50; /* Consistent property naming */
+            padding: 50px 0; /* Balanced padding */
+            text-align: center; /* Center content for better presentation */
+            color: white; /* Ensure text is readable */
         }
 
         .hero h1 {
-            font-weight: 700;
-            color: #ffffff;
-            margin-bottom: 30px;
+            font-size: 48px; /* Larger font size for impact */
+            font-weight: 800; /* Bolder weight for prominence */
+            margin-bottom: 20px; /* Space out elements */
         }
 
-        .logo-text {
-            font-family: 'Poppins', sans-serif; /* Ensure Poppins font is included */
-            font-style: italic;
-            font-weight: 400;
-            font-size: 32px; /* Adjust size as needed */
-            color: white; /* Match your design */
-            text-transform: none; /* Prevents unintended capitalization */
+        .hero p {
+            font-size: 20px; /* Larger font for readability */
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 36px; /* Smaller font size for mobile devices */
+            }
+
+            .hero p {
+                font-size: 18px; /* Smaller paragraph size for mobile readability */
+            }
+        }
+
+        /* Additional responsiveness and mobile adjustments */
+        @media (max-width: 480px) {
+            .custom-navbar .navbar-brand {
+                font-size: 24px; /* Smaller logo font size on very small screens */
+            }
         }
 
     </style>
