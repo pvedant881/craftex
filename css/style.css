@@ -77,67 +77,84 @@ a:hover {
 }
 /* Footer styles */
 .footer {
-    background-color: #1e272c; /* Dark blue background color from your provided code */
-    color: white; /* Set text color to white for readability */
-    padding: 40px 0; /* Vertical padding for spacing */
+    background-color: #1e272c; /* Dark blue background color */
+    color: #fff; /* White text color for readability */
+    padding: 50px 0; /* Increased vertical padding for more space */
     font-family: "Inter", sans-serif; /* Consistency in font */
 }
 
-.container {
-    width: 80%; /* Control the container width, center alignment */
-    max-width: 1140px; /* Set a max-width to maintain layout integrity */
-    margin: 0 auto; /* Centering the container */
-    display: flex; /* Using flexbox for better layout control */
-    justify-content: space-between; /* Space between for two columns */
-    align-items: start; /* Align items to the top */
-    flex-wrap: wrap; /* Wrap items on smaller screens */
+.footer .container {
+    width: 100%; /* Full width for container within footer */
+    max-width: 1200px; /* Maximum width to control layout on larger screens */
+    margin: 0 auto; /* Center the container */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Distribute space between columns */
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
-.col-md-6 {
-    width: 50%; /* Each column takes up half of the container */
-    padding: 0 15px; /* Padding for inner spacing */
-    box-sizing: border-box; /* Include padding in width calculation */
+.footer .col-md-6 {
+    width: calc(50% - 30px); /* Calculate width dynamically, accounting for padding */
+    margin: 15px; /* Margin for spacing between columns */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
 }
 
-h3 {
-    font-size: 24px; /* Heading size for visibility */
-    margin-bottom: 15px; /* Margin below headings for spacing */
+.footer h3 {
+    font-size: 20px; /* Slightly smaller font size for headings */
+    color: #fff; /* White color for headings */
+    margin-bottom: 20px; /* Bottom margin for space below headings */
 }
 
-ul {
-    list-style-type: none; /* Remove bullet points */
+.footer ul {
+    list-style: none; /* Remove list bullets */
     padding: 0; /* Remove padding */
-    margin: 0; /* Remove margins for clean layout */
+    margin: 0; /* Remove margin for a clean list */
 }
 
-ul li a {
-    text-decoration: none; /* No underline on links */
-    color: white; /* Link color set to white for visibility */
-    line-height: 2.4; /* Line height for better readability */
-    display: block; /* Links display as block for easier interaction */
+.footer ul li a {
+    color: #ccc; /* Lighter grey for readability */
+    line-height: 2; /* Increased line height for better legibility */
+    transition: color 0.3s; /* Smooth transition for hover effect */
 }
 
-.subscribe-form {
-    display: flex; /* Flex display for form elements alignment */
-    align-items: center; /* Vertically align items in the form */
-    margin-top: 20px; /* Top margin for spacing from content above */
+.footer ul li a:hover {
+    color: #fff; /* White color on hover for contrast */
+    text-decoration: none; /* No underline on hover */
 }
 
-.subscribe-form input[type="email"] {
-    flex-grow: 1; /* Input takes available space */
-    margin-right: 10px; /* Right margin for spacing between input and button */
-    padding: 10px; /* Padding for input field */
-    border: 2px solid #ffffff; /* White border for input field */
-    background-color: transparent; /* Background transparent to fit the dark theme */
-    color: white; /* Text color white for visibility */
-    font-size: 16px; /* Font size for readability */
+/* Subscribe form styling */
+.footer .subscribe-form {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Align items vertically */
 }
 
-.subscribe-form button {
-    padding: 10px 20px; /* Padding for button */
-    background-color: #007bff; /* Button background color */
-    color: white; /* Button text color */
-    border: none; /* No border for button */
-    cursor: pointer; /* Cursor as pointer to indicate button */
-    font-size: 16px; /* Font size for readability */
+.footer .subscribe-form input[type="email"] {
+    flex-grow: 1; /* Input takes remaining space */
+    margin-right: 10px; /* Space between input and button */
+    padding: 10px; /* Padding inside input for better form control */
+    border: 2px solid #ffffff; /* White border for visibility */
+    background-color: transparent; /* Transparent background to match footer style */
+    color: #ccc; /* Light grey text color for aesthetics */
+    transition: border-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer .subscribe-form input[type="email"]:hover,
+.footer .subscribe-form input[type="email"]:focus {
+    border-color: #fff; /* White border on hover/focus for visibility */
+    outline: none; /* Remove default focus outline */
+}
+
+.footer .subscribe-form button {
+    padding: 10px 20px; /* Padding for button size */
+    background-color: #007bff; /* Bright blue background for visibility */
+    color: #fff; /* White text color */
+    border: none; /* No border for a cleaner look */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer .col-md-6 {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Adjust margin for vertical stacking */
+    }
 }
