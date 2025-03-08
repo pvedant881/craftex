@@ -1,97 +1,135 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The CrafteX</title>
-    <style>
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
-        @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400&display=swap");
 
-        body {
-            margin: 0; /* Remove default margin */
-            overflow-x: hidden; /* Prevent horizontal scrolling */
-            font-family: "Inter", sans-serif;
-            font-weight: 400;
-            line-height: 1.6; /* More readable line height */
-            color: #6a6a6a;
-            font-size: 16px; /* Slightly larger base font size for better readability */
-            background-color: #eff2f1;
-        }
+/* Base styles */
+body {
+    margin: 0; /* Remove default margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    line-height: 1.6; /* More readable line height */
+    color: #6a6a6a; /* Base text color */
+    font-size: 16px; /* Base font size for better readability */
+    background-color: #eff2f1; /* Background color for the entire body */
+}
 
-        a {
-            text-decoration: none;
-            color: #2f2f2f; /* Simplified the color transition for better consistency */
-            transition: color 0.3s ease;
-        }
+a {
+    text-decoration: none; /* No underline by default */
+    color: #2f2f2f; /* Default link color */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
 
-        a:hover {
-            text-decoration: underline; /* Underline on hover for better UX */
-            color: #000; /* Change color on hover for better visibility */
-        }
+a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+    color: #000; /* Change color on hover for better visibility */
+}
 
-        .custom-navbar {
-            background-color: #3b5d50; /* Use background-color for better CSS specificity */
-            padding: 20px 0; /* Unified padding for simplicity */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-        }
+/* Navbar styles */
+.custom-navbar {
+    background-color: #3b5d50; /* Dark green background */
+    padding: 20px 0; /* Top and bottom padding */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
 
-        .custom-navbar .navbar-brand {
-            font-size: 32px;
-            font-weight: 600;
-            color: white; /* Ensuring text is easily readable on the dark background */
-        }
+.custom-navbar .navbar-brand {
+    font-size: 32px;
+    font-weight: 600;
+    color: white; /* White color for brand text */
+}
 
-        .custom-navbar .navbar-brand > span {
-            opacity: 0.4; /* Stylistic choice for design flair */
-        }
+.custom-navbar .navbar-brand > span {
+    opacity: 0.4; /* Slightly transparent span for design flair */
+}
 
-        .hero {
-            background-color: #3b5d50; /* Consistent property naming */
-            padding: 50px 0; /* Balanced padding */
-            text-align: center; /* Center content for better presentation */
-            color: white; /* Ensure text is readable */
-        }
+/* Hero section styles */
+.hero {
+    background-color: #3b5d50; /* Background color for hero section */
+    padding: 50px 0; /* Top and bottom padding */
+    text-align: center; /* Center align text */
+    color: white; /* White text for visibility */
+}
 
-        .hero h1 {
-            font-size: 48px; /* Larger font size for impact */
-            font-weight: 800; /* Bolder weight for prominence */
-            margin-bottom: 20px; /* Space out elements */
-        }
+.hero h1 {
+    font-size: 48px; /* Large font size for heading */
+    font-weight: 800; /* Bold font weight */
+    margin-bottom: 20px; /* Space below the heading */
+}
 
-        .hero p {
-            font-size: 20px; /* Larger font for readability */
-        }
+.hero p {
+    font-size: 20px; /* Readable font size for paragraph */
+}
 
-        @media (max-width: 768px) {
-            .hero h1 {
-                font-size: 36px; /* Smaller font size for mobile devices */
-            }
+/* Responsive styles for smaller devices */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 36px; /* Smaller font size for compact spaces */
+    }
 
-            .hero p {
-                font-size: 18px; /* Smaller paragraph size for mobile readability */
-            }
-        }
+    .hero p {
+        font-size: 18px; /* Slightly smaller paragraph size */
+    }
+}
 
-        /* Additional responsiveness and mobile adjustments */
-        @media (max-width: 480px) {
-            .custom-navbar .navbar-brand {
-                font-size: 24px; /* Smaller logo font size on very small screens */
-            }
-        }
+@media (max-width: 480px) {
+    .custom-navbar .navbar-brand {
+        font-size: 24px; /* Reduce brand size for small screens */
+    }
+}
 
-    </style>
-</head>
-<body>
-    <nav class="custom-navbar">
-        <a href="#" class="navbar-brand">
-            <span class="logo-text">The CrafteX</span>
-        </a>
-    </nav>
+/* Footer styles */
+.footer {
+    background-color: #f8f9fa; /* Light gray background for footer */
+    padding: 20px 0; /* Padding for spacing */
+    font-family: Arial, sans-serif; /* Font family for footer */
+}
 
-    <section class="hero">
-        <h1>Welcome to The CrafteX</h1>
-        <p>Your handcrafted solutions for every need.</p>
-    </section>
-</body>
-</html>
+.container {
+    width: 80%; /* Width of container for alignment */
+    margin: 0 auto; /* Centering container */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between; /* Space between columns */
+    align-items: flex-start; /* Align items to the top */
+}
+
+.col-md-6 {
+    flex: 0 0 50%; /* Each column takes half of the row */
+    padding: 15px; /* Padding inside columns */
+}
+
+h3 {
+    color: #333; /* Dark grey color for headings */
+}
+
+ul {
+    list-style-type: none; /* No bullets for list */
+    padding: 0; /* No padding */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap's default link color */
+    line-height: 2.5; /* Line height for spacing */
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+}
+
+.subscribe-form input[type="email"] {
+    flex-grow: 1;
+    margin-right: 10px; /* Space between input and button */
+    padding: 8px 12px; /* Padding inside input */
+    border: 1px solid #ccc; /* Border around input */
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue background for button */
+    color: white;
+    border: none;
+    cursor: pointer;
+}
