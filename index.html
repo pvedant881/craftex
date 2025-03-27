@@ -1,378 +1,54 @@
-<!doctype html>
-<html class="h-100" lang="en">
-
-  <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="A well made and handcrafted Bootstrap 5 template">
-  <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/The Craftex logo.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/The Craftex logo.png">
-  <link rel="icon" href="images/The Craftex logo.png" type="image/png">
-  <meta name="author" content="Holger Koenemann">
-  <meta name="generator" content="Eleventy v2.0.0">
-  <meta name="HandheldFriendly" content="true">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-  <title>The CrafteX</title>
-  <link rel="stylesheet" href="css/theme.min.css">
-
-  <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-  <link href="css/tiny-slider.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Proxima+Nova:wght@400;700&display=swap" rel="stylesheet">
-  <title>The CrafteX</title>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Support Bot</title>
   <style>
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 300;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-300.woff2') format('woff2'),
-        url('fonts/inter-v12-latin-300.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-regular.woff2') format('woff2'),
-        url('fonts/inter-v12-latin-regular.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 500;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-500.woff2') format('woff2'),
-        url('fonts/inter-v12-latin-500.woff') format('woff');
-    }
-
-    @font-face {
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 700;
-      font-display: swap;
-      src: local(''),
-        url('fonts/inter-v12-latin-700.woff2') format('woff2'),
-        url('fonts/inter-v12-latin-700.woff') format('woff');
-    }
-
     body {
-      background-color: #1E272C;
-      color: #fff;
-    }
-
-    .navbar {
-      background-color: #1E272C;
-      /* Removed the border-bottom line */
-      padding: 0.5rem 1rem;
-    }
-
-    .navbar-brand span {
-      font-family: 'Proxima Nova', sans-serif;
-      font-weight: 700;
-      font-size: 1.5rem;
-      color: #ffffff;
-    }
-
-    .nav-link {
-      color: #d3d3d3;
-      font-size: 1rem;
-      margin-right: 25px; /* Updated spacing for better desktop view */
-      transition: color 0.3s ease, transform 0.3s ease;
-    }
-
-    .nav-link:hover {
-      color: #ffffff;
-      text-decoration: none;
-      transform: translateY(-3px);
-    }
-
-    .nav-item {
-      position: relative;
-      display: inline-block;
-    }
-
-    .nav-item::after {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 0;
-      height: 2px;
-      background-color: #ffffff;
-      transition: width 0.3s ease;
-    }
-
-    .nav-item:hover::after {
-      width: 100%;
-    }
-
-    .btn-light {
-      background-color: #ffc107;
-      color: #000;
-      border-radius: 25px;
-      padding: 10px 20px;
-      font-size: 1rem;
-      transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .btn-light:hover {
-      background-color: #ffca2c;
-      color: #000;
-    }
-
-    .custom-mission {
-      font-size: 1.25rem;
-      color: #bcbcbc;
-    }
-
-    .display-huge {
-      font-size: 3rem;
-      color: #ffffff;
-      line-height: 1.2;
-    }
-
-    .mobile-nav {
-      display: none;
-      position: fixed;
-      top: 0;
-      right: 0;
-      width: 250px;
-      height: 100%;
-      background: #1E272C;
-      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-      transform: translateX(100%);
-      transition: transform 0.3s ease;
-      z-index: 1000;
-      padding: 20px;
-    }
-
-    .mobile-nav.open {
-      transform: translateX(0);
-      display: block;
-    }
-
-    .mobile-nav ul {
-      list-style: none;
-      padding: 0;
       margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      background-color: #f2f2f2;
     }
 
-    .mobile-nav ul li {
-      margin: 15px 0;
+    header {
+      background-color: #004b91;
+      color: white;
+      padding: 16px;
+      text-align: center;
+      font-size: 1.5em;
     }
 
-    .mobile-nav ul li a {
-      color: #d3d3d3;
-      font-size: 1rem;
-      text-decoration: none;
-    }
-
-    .mobile-nav ul li a:hover {
-      color: #ffffff;
-    }
-
-    .close-btn {
-      font-size: 1.5rem;
-      color: #ffffff;
-      cursor: pointer;
-      margin-bottom: 20px;
-      display: block;
-      text-align: right;
-    }
-
-    .overlay {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
+    iframe {
+      flex-grow: 1;
+      border: none;
       width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5);
-      z-index: 999;
     }
 
-    .overlay.show {
-      display: block;
-    }
-
-    .hamburger {
-      display: none;
-      font-size: 1.5rem;
-      color: #ffffff;
-      cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-      .hamburger {
-        display: block;
-      }
-
-      .navbar-nav {
-        display: none;
-      }
-
-      .btn-light {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-      }
-
-      body {
-        font-size: 0.9rem;
-      }
-
-      .custom-mission {
-        font-size: 1rem;
-      }
-
-      .display-huge {
-        font-size: 2rem;
-      }
-
-      .nav-link {
-        font-size: 0.9rem;
-      }
+    footer {
+      background-color: #004b91;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      font-size: 0.9em;
     }
   </style>
 </head>
+<body>
 
-<body class="text-white mt-0" data-bs-spy="scroll" data-bs-target="#navScroll">
+  <header>
+    Welcome to Our Support Chat!
+  </header>
 
-  <nav id="navScroll" class="navbar fixed-top px-vw-5" tabindex="0">
-    <div class="container d-flex justify-content-between align-items-center">
-      <a class="navbar-brand pe-md-4 fs-4" href="#">
-        <span class="ms-md-1 mt-1 fw-bolder">The CrafteX</span>
-      </a>
-      <div class="d-none d-md-flex align-items-center">
-        <ul class="navbar-nav d-flex flex-row">
-          <li class="nav-item"><a class="nav-link" href="#">Shop with us</a></li>
-          <li class="nav-item"><a class="nav-link" href="about_us.html">About us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><img src="images/user.svg" alt="User" style="height: 20px;"></a></li>
-          <li class="nav-item"><a class="nav-link" href="#"><img src="images/cart.svg" alt="Cart" style="height: 20px;"></a></li>
-        </ul>
-      </div>
-      <span class="hamburger d-md-none" id="hamburger">☰</span>
-      <div class="overlay" id="overlay"></div>
-      <div class="mobile-nav" id="mobileNav">
-        <span class="close-btn" id="closeBtn">&times;</span>
-        <ul>
-          <li><a href="#">Shop with us</a></li>
-          <li><a href="about_us.html">About us</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#"><img src="images/user.svg" alt="User"> Profile</a></li>
-          <li><a href="#"><img src="images/cart.svg" alt="Cart"> Cart</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <iframe src="https://copilotstudio.microsoft.com/environments/Default-27374b0e-1a3c-4f60-be51-de13a13a5310/bots/crabb_agentqxepK6/webchat?__version__=2">
+  </iframe>
 
-  <main>
-    <div class="w-100 overflow-hidden position-relative" data-aos="fade">
-      <div class="container py-vh-4 position-relative mt-5 px-vw-5 text-center">
-        <div class="row d-flex align-items-center justify-content-center py-vh-5">
-          <div class="col-12 col-xl-10">
-            <span class="h5 text-first fw-lighter custom-mission">Our Mission</span>
-            <h1 class="display-huge mt-3 mb-3 lh-1">Make Your Mark: Where Every Design Tells Your Story.</h1>
-          </div>
-          <div class="col-12 col-xl-8">
-            <p class="lead text-first custom-vibe">We pour passion into every cover, making sure your style dazzles and delights. Dare to be you!</p>
-          </div>
-          <div class="col-12 text-center">
-            <a href="#" class="btn btn-xl btn-light">Coming Soon
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </main>
-<footer class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h3>Links</h3>
-                <ul>
-                    <li><a href="#">Product Categories</a></li>
-                    <li><a href="about_us.html">About Us</a></li>
-                    <li><a href="#">FAQs</a></li>
-                    <li><a href="#">Terms and Conditions</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Return Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Track Your Order</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-            </div>
-            <div class="col-md-6">
-                <h3>Stay Updated!</h3>
-                <p>Subscribe to our newsletter to receive the latest news and exclusive offers every week.</p>
-                <form class="subscribe-form">
-                    <input type="email" name="email" placeholder="Enter your email" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</footer>
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 800,
-    });
-
-    const hamburger = document.getElementById('hamburger');
-    const mobileNav = document.getElementById('mobileNav');
-    const closeBtn = document.getElementById('closeBtn');
-    const overlay = document.getElementById('overlay');
-
-    hamburger.addEventListener('click', () => {
-      mobileNav.classList.toggle('open');
-      overlay.classList.toggle('show');
-    });
-
-    closeBtn.addEventListener('click', () => {
-      mobileNav.classList.remove('open');
-      overlay.classList.remove('show');
-    });
-
-    overlay.addEventListener('click', () => {
-      mobileNav.classList.remove('open');
-      overlay.classList.remove('show');
-    });
-  </script>
-  <script>
-    let scrollpos = window.scrollY;
-    const header = document.querySelector(".navbar");
-    const header_height = header.offsetHeight;
-
-    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm");
-    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm");
-
-    window.addEventListener('scroll', function () {
-      scrollpos = window.scrollY;
-
-      if (scrollpos >= header_height) {
-        add_class_on_scroll();
-      } else {
-        remove_class_on_scroll();
-      }
-    });
-  </script>
+  <footer>
+    © 2025 Caterpillar Signs | All rights reserved
+  </footer>
 
 </body>
-
 </html>
