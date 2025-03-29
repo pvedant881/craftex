@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Customer Support Bot</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 <style>
     * {
       margin: 0;
@@ -26,7 +27,7 @@
       text-align: center;
       font-size: 1.5em;
     }
- 
+
     iframe {
       flex-grow: 1;
       border: none;
@@ -41,22 +42,53 @@
       padding: 10px;
       font-size: 0.9em;
     }
+
+    .button-container {
+      position: fixed;
+      right: 10px;
+      bottom: 60px; /* Adjust based on your Send button's position */
+      display: flex;
+      flex-direction: column;
+    }
+
+    .action-button {
+      margin: 5px;
+      background-color: #004b91;
+      border: none;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      font-size: 0.9em;
+    }
+
+    .action-button i {
+      margin-right: 5px;
+    }
 </style>
 </head>
 <body>
  
-  <header>
-    Welcome to Our Support Chat!
+<header>
+  Welcome to Our Support Chat!
 </header>
  
-  <!-- Embedded Copilot Bot IFrame -->
+<!-- Embedded Copilot Bot IFrame -->
 <iframe 
     src="https://copilotstudio.microsoft.com/environments/Default-27374b0e-1a3c-4f60-be51-de13a13a5310/bots/crabb_oneVoice/webchat?__version__=2" 
     frameborder="0">
 </iframe>
  
-  <footer>
-    © 2025 Caterpillar Signs | All rights reserved
+<div class="button-container">
+  <button class="action-button"><i class="fas fa-envelope"></i> Please draft me a response for email</button>
+  <button class="action-button"><i class="fas fa-comment-dots"></i> Please draft me a response for chat</button>
+  <button class="action-button"><i class="fas fa-phone"></i> Please draft me a response for phone</button>
+</div>
+
+<footer>
+  © 2025 Caterpillar Signs | All rights reserved
 </footer>
  
 </body>
