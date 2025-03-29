@@ -46,7 +46,7 @@
     .button-container {
       position: fixed;
       right: 10px;
-      bottom: 60px; /* Adjust based on your Send button's position */
+      bottom: 80px; /* Adjusted to move the buttons slightly higher */
       display: flex;
       flex-direction: column;
     }
@@ -68,6 +68,15 @@
       margin-right: 5px;
     }
 </style>
+<script>
+function sendMessage(message) {
+    const chatFrame = document.querySelector('iframe');
+    if (chatFrame.contentWindow) {
+        // Assuming the chat iframe accepts postMessage for communication
+        chatFrame.contentWindow.postMessage(message, '*');
+    }
+}
+</script>
 </head>
 <body>
  
@@ -82,9 +91,9 @@
 </iframe>
  
 <div class="button-container">
-  <button class="action-button"><i class="fas fa-envelope"></i> Please draft me a response for email</button>
-  <button class="action-button"><i class="fas fa-comment-dots"></i> Please draft me a response for chat</button>
-  <button class="action-button"><i class="fas fa-phone"></i> Please draft me a response for phone</button>
+  <button class="action-button" onclick="sendMessage('Please draft me a response for email')"><i class="fas fa-envelope"></i> Please draft me a response for email</button>
+  <button class="action-button" onclick="sendMessage('Please draft me a response for chat')"><i class="fas fa-comment-dots"></i> Please draft me a response for chat</button>
+  <button class="action-button" onclick="sendMessage('Please draft me a response for phone')"><i class="fas fa-phone"></i> Please draft me a response for phone</button>
 </div>
 
 <footer>
